@@ -1,0 +1,44 @@
+{
+  "name": "coconut",
+  "version": "1.0.0",
+  "description": "\"# coconut\"",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "watch": "nodemon --exec \"./node_modules/.bin/electron --no-sanbox .\" --watch . --watch static --ext css,js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigOrt/coconut.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/BigOrt/coconut/issues"
+  },
+  "homepage": "https://github.com/BigOrt/coconut#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@svgr/webpack": "^5.5.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "electron": "^11.1.0",
+    "nodemon": "^2.0.6",
+    "standard": "^16.0.3",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.10.2",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "electron-reload": "^1.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
